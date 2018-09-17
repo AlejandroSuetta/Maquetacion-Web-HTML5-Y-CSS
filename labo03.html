@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Labo03</title>
+
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+			@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+			body {
+				font-family: 'Roboto Slab', serif;
+				font-size: 90%;
+			}
+
+			header {
+				background-color: rgba(0,0,0,0.7);
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			h1 {
+				font-family: 'Berkshire Swash', cursive;
+				font-size: 2.5em;
+				color: white;
+				margin-left: 5px;
+			}
+
+			nav {
+				justify-content: center center;
+				margin-top: 35px;
+			}
+
+			a {
+				margin: 50px 20px;
+				color: white;
+				text-decoration: none;
+			}
+
+			a:hover {text-decoration: underline;}
+
+			body {
+				background-image: url(pattern.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			#div1 {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-top: 100px;
+			}
+
+			h2 {
+				color: grey;
+				font-size: 100px;
+
+			}	
+
+			img {
+				height: 100px;
+				padding-top: 100px;
+			}
+
+			#div2 {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+
+			.button {
+				background-color: #1DBA55;
+				color: white;
+				font-size: 20px;
+				font-weight: bold;
+				padding: 10px 250px
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1>Musiquita Viajera</h1>
+
+			<nav>
+				<a href="#">Premium</a>
+				<a href="#">Ayuda</a>
+				<a href="#">Descargar</a>
+				<a href="#">Registro</a>
+				<a href="#">Sesion</a>
+			</nav>
+		</header>
+
+		<main>
+			<div id="div1">
+				<img src="arrow-left.png">
+
+				<h2>Música para todos</h2>
+
+				<img src="arrow-right.png">
+			</div>
+
+			<div id="div2">
+				<button class="button">Obtén Aplicación</button>
+
+				<button class="button">Suscribirse Premium</button>
+			</div>
+		</main>
+	</body>
+</html>

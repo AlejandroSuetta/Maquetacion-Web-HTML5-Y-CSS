@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clase 03</title>
+
+	<style>
+		#contenedor {width: 50%; 
+			margin:0 auto; 
+			background-color: blue;
+			display:flex;
+			height: 600px;
+			/*flex-direction: row;*/ /*por default es row*/
+			/*flex-direction: row-reverse;*/ /*Similar al anterior, pero los ordena al revez*/
+			/*flex-direction: column;*/ /*ordena de arriba hacia abajo. Tambien esta el column-reverse*/
+			justify-content: flex-start; /*Alinea el contenido en sentido al flex-direction. Por default flex-start. Otros flex-end, center, space-around, space-between, space-evenly*/
+			align-items: stretch; /*Por defecto stretch. Stretch no funciona si el item tiene un atlo (en ese caso el default es flex-start). Stretch lo que hace es que estira los elementos para que ocupe todo el contenedor*/
+		}
+
+		.items {
+			width: 30%;
+			height: 250px;
+			line-height: 200px
+			font-size:30px;
+			text-align: : center;
+			background-color: lime;
+			float: left;
+		}
+
+		p:first-letter {font-size: 30px;}
+
+		p:first-line {background-color: yellow;}
+
+		section:first-child {background-color: red} /*First-child sirve solo si es el primer hijo dentro de un contenedor. En este caso si hay un h2 antes del section en main, esto no serviria*/
+
+		section:last-child {background-color: green}
+
+		/*Para cambiar link, siempre hay que mantener este orden: link, visited, hover, active*/
+		a:link {color: white;} /*Links no visitados*/
+		a:visited {color: orange;} /*Links visitados*/
+		a:hover {color:lightblue;} /*Cuando se hace hover sobre el link*/
+		a:active {color: red;}/*Mientras el link se esta cliqueando*/
+
+		input:hover {background-color: blue;}
+		input:focus {background-color: yellow;}
+
+		/*.items:nth-child(2) {margin: auto;}*/ /*Es para modificar un elemento en esècifico. Entre parentesis se pone el numero del elemento a cambiar (si es el segundo se pone un 2)*/
+		.items:last-child {margin-left: auto;}
+
+	</style>
+</head>
+<body>
+<header>
+	<div id="contenedor">
+		<div class="items">1</div>
+		<div class="items">2</div>
+		<div class="items">3</div>
+	</div>
+</header>
+
+<main>
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	
+	<form action="">
+		<input type="text">
+	</form>
+
+
+	<section>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rem vitae culpa consectetur vero odit dolorem tempore autem voluptates pariatur, fuga cumque, aliquam fugiat. Sunt a incidunt non magnam, adipisci.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur corrupti eos porro beatae veniam dolor, eum voluptates. Sed perferendis reiciendis odit pariatur corporis deserunt deleniti culpa eveniet dolor voluptatem.</p>
+	</section>
+
+	<section>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rem vitae culpa consectetur vero odit dolorem tempore autem voluptates pariatur, fuga cumque, aliquam fugiat. Sunt a incidunt non magnam, adipisci.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur corrupti eos porro beatae veniam dolor, eum voluptates. Sed perferendis reiciendis odit pariatur corporis deserunt deleniti culpa eveniet dolor voluptatem.</p>
+	</section>
+</main>
+</body>
+</html>
